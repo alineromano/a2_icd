@@ -1,8 +1,7 @@
-from bokeh.io import output_file, show
+from bokeh.io import show
 from bokeh.models import Range1d
 from bokeh.models.annotations import BoxAnnotation
 from bokeh.plotting import figure
-from base_limpa import df
 from ICdD_modulo_base_para_cds import create_column_data_source
 
 # definindo o columdatasource
