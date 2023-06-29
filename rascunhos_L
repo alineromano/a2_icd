@@ -1,7 +1,0 @@
-import pandas as pd
-from bokeh.io import output_file, show, output_notebook
-from bokeh.layouts import gridplot
-from bokeh.models import Range1d, ColumnDataSource, BasicTicker, ColorBar, FactorRange, LinearColorMapper
-from bokeh.models.annotations import Span, BoxAnnotation
-from bokeh.plotting import figure
-from bokeh.transform import factor_cmap, linear_cmap, dodge
