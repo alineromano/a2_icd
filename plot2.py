@@ -14,7 +14,10 @@ source = create_column_data_source(csv_file)
 y_range_start = 0 #Colocando o máximo e mínimo dos valores do meu the y-axis range
 y_range_end = 110
 
-#Criando uma figura com as características atribuídas; "plot_width" e "plot_height" dá as dimensões, "title" coloca o título, "plot.background_fill_color" para colocar a cor de fundo do meu gráfico dentro da paleta de cores discutida pelo grupo (escolhi o tom "#38375c"), "x_axis_label", "label" para colocar os nomes do meu "x-axis" e "y-axis", e "y_range" especifica os valores do meu "y-axis" para os definidos previamente em cima ("y_range_start" e "y_range_end").
+#Criando uma figura com as características atribuídas; 
+#"plot_width" e "plot_height" dá as dimensões, "title" coloca o título, 
+#"plot.background_fill_color" para colocar a cor de fundo dentro da paleta de cores discutida pelo grupo (escolhi o tom "#38375c")
+#"label" para colocar os nomes, e "y_range" especifica os valores do meu "y-axis" (definidos em"y_range_start" e "y_range_end").
 p = figure(plot_width=600, plot_height=400, title="Relação entre consumo de cafeína e sono profundo", background_fill_color="#38375c",
            x_axis_label="Sono profundo", y_axis_label="Consumo de cafeina", y_range=(y_range_start, y_range_end))
 
