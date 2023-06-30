@@ -17,10 +17,12 @@ coluna_consumo_alcool = "Alcohol consumption"
 coluna_porcentagem_sono_profundo = "Deep sleep percentage"
 coluna_porcentagem_sono_leve = "Light sleep percentage"
 
-p = figure(title="Relação entre Consumo de Álcool e Porcentagem Estágio do Sono",
+p = figure(title="Consumo de Álcool e Porcentagem de duração das etapas do Sono",
            x_axis_label= "Consumo de Álcool",
            y_axis_label= "Porcentagens",
-           width=800, height=600)
+           width=800, height=600,
+           background_fill_color="#50C4F2",
+           background_fill_alpha=0.1)
 
 # Alterando a fonte, a cor e o tamanho da fonte do título
 p.title.text_font = "Times New Roman"
@@ -43,7 +45,7 @@ p.x_range = x_range
 p.y_range = y_range
 
 # Adicionando um deslocamento aleatório aos pontos para criar o efeito de Gitter
-deslocamento = np.random.uniform(-0.5, 0.5, len(df))
+deslocamento = np.random.uniform(-0.7, 0.7, len(df))
 df[coluna_consumo_alcool] += deslocamento
 
 p.asterisk(df[coluna_consumo_alcool], df[coluna_porcentagem_sono_profundo],
