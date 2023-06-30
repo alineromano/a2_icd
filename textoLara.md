@@ -2,4 +2,5 @@ Durante uma das vezes que eu e minhas duas colegas de trabalho nos encontramos p
 Por ser uma base de dados sobre a eficiência do sono, optei por uma paleta que não utilizasse de cores 
 cansativas visualmente e sim que se aproximavam de tons pastéis, seguindo toda a estética de calmaria que gira em torno do ato de dormir.
 Tons de azul, champagne e amarelo foram os meus escolhidos, por mais que tenham ficado escuros ou possam parecer sem graça em
-alguns momentos, achei que era a melhor escolha.
+alguns momentos, achei que era a melhor escolha. 
+Meu Gráfico 1, um gráfico de dispersão onde troquei os pontos por estrelas (já que é um Sleep Data), analisei as colunas Caffeine Consumption e Deep Sleep Percentage, quis mostrar que quanto maior o consumo de cafeína, menor a ocorrência de um sono profundo. Meu gráfico 2 foi um gráfico de barras com a relação entre "Smoking Status" e "Sleep Efficiency", nele é possível notar que pessoas não fumantes obtiveram uma eficiência maior em descansar do que as fumantes durante o sono. Meu gráfico foi um gráfico de dispersão com a relação entre Awakenings por Age, onde é possível notar que dos 20 aos 30 e dos 40 aos 50 foi mais relatado acordar quatro vezes por noite, enquanto, de um modo geral, a maioria disse ter acordado apenas uma vez.
