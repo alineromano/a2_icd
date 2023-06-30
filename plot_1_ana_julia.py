@@ -63,8 +63,8 @@ def create_plot7():
         ("Average Sleep duration", "@y"),
     ])
 
-# adicionando os glifos que representam a média da duração do sono para cada valor de x. Aqui já está incluída a estética do hover, como a cor.
-circle = p.circle(
+    # adicionando os glifos que representam a média da duração do sono para cada valor de x. Aqui já está incluída a estética do hover, como a cor.
+    circle = p.circle(
     valores_unicos_exercise,
     valores_media_sleep_duration,
     line_color="#784A8C",
