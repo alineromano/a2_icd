@@ -39,4 +39,3 @@ print(media_light, media_deep, media_rem)
 
 # em média, o sono deep é o maior, reprentando quase 50%
 # light e rem tem médias semelhantes
-# ideia: estudar essas % em relação a Awakenings

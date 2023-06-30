@@ -4,42 +4,46 @@ from bokeh.models.annotations import BoxAnnotation
 from bokeh.plotting import figure
 from ICdD_modulo_base_para_cds import create_column_data_source
 
-# definindo o columdatasource
-csv_file  = 'Sleep_Efficiency_Limpa.csv'
-source = create_column_data_source(csv_file)
+def create_plot5():
 
-# gráfico de dispersão entre deep x light sleep, proporcional a sleep efficiency
-# pelo gráfico, é possível verificar dois grupos distintos, destacados pelo box annotation
+    # definindo o columdatasource
+    csv_file  = 'Sleep_Efficiency_Limpa.csv'
+    source = create_column_data_source(csv_file)
 
-# criando a figure
-plot = figure()
+    # gráfico de dispersão entre deep x light sleep, proporcional a sleep efficiency
+    # pelo gráfico, é possível verificar dois grupos distintos, destacados pelo box annotation
 
-# cria uma coluna multiplicando sleep efficiency para aumentar o tamanho geral dos pontos no gráfico
-source.data['Sleep efficiency multiplicado'] = source.data['Sleep efficiency'] * 15
+    # criando a figure
+    plot = figure()
 
-# criando o gráfico de dispersão (em formato de estrela)
-plot.star(x="Deep sleep percentage", y="Light sleep percentage", size = "Sleep efficiency multiplicado" , color ="lightyellow", source = source) 
+    # cria uma coluna multiplicando sleep efficiency para aumentar o tamanho geral dos pontos no gráfico
+    source.data['Sleep efficiency multiplicado'] = source.data['Sleep efficiency'] * 15
 
-# montado as caixas
-box_annotation1 = BoxAnnotation(left = 15, right = 40, top = 65, bottom = 35, line_color = "pink", line_width = 5, fill_color = None, line_alpha = 1)
-plot.add_layout(box_annotation1)
+    # criando o gráfico de dispersão (em formato de estrela)
+    plot.star(x="Deep sleep percentage", y="Light sleep percentage", size = "Sleep efficiency multiplicado" , color ="lightyellow", source = source) 
 
-box_annotation2 = BoxAnnotation(left = 47, right = 78, top = 33, bottom = 5, line_color = "lightblue", line_width = 5, fill_color = None, line_alpha = 1)
-plot.add_layout(box_annotation2)
+    # montado as caixas
+    box_annotation1 = BoxAnnotation(left = 15, right = 40, top = 65, bottom = 35, line_color = "pink", line_width = 5, fill_color = None, line_alpha = 1)
+    plot.add_layout(box_annotation1)
 
-# definindo as legendas dos eixos
-plot.xaxis.axis_label = "Deep sleep percentage"
-plot.yaxis.axis_label = "Light sleep percentage"
+    box_annotation2 = BoxAnnotation(left = 47, right = 78, top = 33, bottom = 5, line_color = "lightblue", line_width = 5, fill_color = None, line_alpha = 1)
+    plot.add_layout(box_annotation2)
 
-# definindo os intervalos dos eixos
-plot.x_range = Range1d(start = 0, end = 80)
-plot.y_range = Range1d(start = 0, end = 70)
+    # definindo as legendas dos eixos
+    plot.xaxis.axis_label = "Deep sleep percentage"
+    plot.yaxis.axis_label = "Light sleep percentage"
 
-# título
-plot.title="Light x Deep Sleep effects on Sleep Efficiency"
+    # definindo os intervalos dos eixos
+    plot.x_range = Range1d(start = 0, end = 80)
+    plot.y_range = Range1d(start = 0, end = 70)
 
-# estética do fundo
-plot.grid.grid_line_alpha = 0.3
-plot.background_fill_color = "#0D0224"
+    # título
+    plot.title="Light x Deep Sleep effects on Sleep Efficiency"
 
-show(plot)
+    # estética do fundo
+    plot.grid.grid_line_alpha = 0.3
+    plot.background_fill_color = "#0D0224"
+
+    #show(plot)
+
+    return plot
