@@ -13,7 +13,7 @@ def create_plot9():
 
     # A ideia dessas análises agora é comparar idade com a porcentagem de sono REM.
     # O sono REM é uma etapa do sono na qual costumamos sonhar, as ondas cerebrais ficam ativas e a respiração e batimentos acelerados. 
-    # Mas, os músculos permanecem paralisados.
+    # Mas, os músculos permanecem paralisados. Essa definição me despertou curiosidade. Por isso, resolvi analisar seus dados.
 
     # Atribuindo o nome das colunas que serão usadas a variáveis com o intuito de deixar o código mais legível.
     coluna_idade = "Age"
@@ -44,17 +44,19 @@ def create_plot9():
     p.x_range = x_range
     p.y_range = y_range
 
-    # Adicionando um deslocamento aleatório aos pontos para criar o efeito de Gitter
+    # Adicionando um deslocamento aleatório aos pontos para criar o efeito de Jitter.
     deslocamento = np.random.uniform(-0.9, 0.9, len(df))
     df[coluna_idade] += deslocamento
 
+    # Definindo os glifos do gráfico
     p.asterisk(df[coluna_idade], df[coluna_porcentagem_sono_REM],
             legend_label="Sono REM por idade", fill_color="#784A8C", size=9, alpha=0.6)
 
     # Adicionando uma imagem como plano de fundo. O objetivo disso é reforçar o tema do gráfico ao mesmo tempo que favorece a estética.
-    # Atribuindo algumas informações à variáveis primeiro
+    # Primeiro, atribuindo a variáveis algumas informações
     background_image_url = "imagem_sono_REM_teste.png"
     background_opacity = 0.14
+    
     # Plotando a imagem de fundo, definindo seu tamanho e a profundiade da sua cor no gráfico.
     p.image_url(url=[background_image_url], x=0, y=0, w=80, h=40, anchor="bottom_left", alpha=background_opacity)
 

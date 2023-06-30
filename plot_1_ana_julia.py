@@ -15,7 +15,7 @@ def create_plot7():
     # A ideia inicial é plotar um gráfico comparando a frequência de exercício físico com a média de duração do sono.
     # Além disso, resolvi analisar a quantidade de vezes que uma pessoa acorda no meio da noite em meio a tudo isso, sendo o raio do glifo.
 
-    # Atribuindo o nome das colunas a variáveis porque acredito que o código fica mais legível
+    # Atribuindo o nome das colunas a variáveis, visando maior legibilidade para o código
     coluna_exercise = "Exercise frequency"
     coluna_sleep_duration = "Sleep duration"
     coluna_awakenings = "Awakenings"
@@ -43,12 +43,12 @@ def create_plot7():
             y_axis_label= "Average Sleep Duration",
             width=800, height=600)
 
-    # Alterando a fonte, a cor e o tamanho da fonte do título
+    # Alterando o tipo, o tamanho e a cor da fonte do título
     p.title.text_font = "Times New Roman"
     p.title.text_color = "#4C2D59"
     p.title.text_font_size = "18pt"
 
-    # Alterando a fonte, a cor e o tamanho da fonte dos rótulos dos eixos
+    # Alterando o tipo, o tamanho e a cor da fonte dos rótulos dos eixos
     p.xaxis.axis_label_text_font = "Helvetica"
     p.xaxis.axis_label_text_color = "#4C2D59"
     p.xaxis.axis_label_text_font_size = "12pt"
