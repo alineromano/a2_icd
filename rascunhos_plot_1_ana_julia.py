@@ -16,7 +16,6 @@ source = create_column_data_source(csv_file)
 coluna_exercise = "Exercise frequency"
 coluna_sleep_duration = "Sleep duration"
 coluna_awakenings = "Awakenings"
-coluna_deep_sleep_percentage = "Deep sleep percentage"
 
 # Calcula a média da duração do sono de acordo com a frequência de exercícios físicos
 mean_sleep_duration = df.groupby(coluna_exercise)[coluna_sleep_duration].mean()
