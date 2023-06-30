@@ -94,5 +94,3 @@ output_file("plot_1_Ana.html", title="plot_1_Ana")
 
 # Exibir o gráfico
 show(p)
-
-
