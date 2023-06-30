@@ -53,7 +53,7 @@ def create_plot9():
 
     # Adicionando uma imagem como plano de fundo. O objetivo disso é reforçar o tema do gráfico ao mesmo tempo que favorece a estética.
     # Atribuindo algumas informações à variáveis primeiro
-    background_image_url = "..\imagem_sono_REM_teste.png"
+    background_image_url = "imagem_sono_REM_teste.png"
     background_opacity = 0.14
     # Plotando a imagem de fundo, definindo seu tamanho e a profundiade da sua cor no gráfico.
     p.image_url(url=[background_image_url], x=0, y=0, w=80, h=40, anchor="bottom_left", alpha=background_opacity)
