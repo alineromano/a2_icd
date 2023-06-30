@@ -68,6 +68,7 @@ circle = p.circle(
     fill_color="#784A8C",
     alpha = 1,
     size=mean_awakening_for_exercise_frequency*40,
+    legend_label = "awakenings, exercise frequency and sleep durantion",
     hover_fill_color="#C373D9",
     hover_alpha=1,
     hover_line_color="#C373D9")
