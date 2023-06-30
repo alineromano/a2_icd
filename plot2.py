@@ -2,11 +2,6 @@
 ##para demonstrar que é um texto usamos a "#", para mostrar que a linha debaixo é a continuação da acima, uso "##" (2 hashtags), 
 ###com a intenção de sinalizar que aquela é a segunda linha de uma mesma anotação. Quando aquela observação acaba, a hashtag no
 ####início da frase seguinte é apenas uma. Por exemplo, aqui na quarta linha dessa explicação, coloquei quatro hashtags.
-#Durante uma das vezes que eu e minhas duas colegas de trabalho nos encontramos para discutir o que iria ser feito,
-##decidimos estabelecer uma paleta de cores para cada, que devia ser seguida ao longo de todo o trabalho, para ficar mais 
-###harmônico esteticamente. Fizemos a escolha das paletas uma da outra ainda em conjunto, julgando entre si qual era boa 
-####e qual não era. A paleta de cores escolhida por mim, e aprovada por minhas colegas, foi: #38375C (Jacarta), #56597C (Purple Navy) 
-##### , #787B93 (Rhythm), #F2E6C9 (Champagne), #CAC1B0 (Dark Vanilla) e #AEA49F (Quick Silver). 
 
 import pandas as pd
 from bokeh.io import output_file, show, output_notebook
